@@ -197,5 +197,28 @@ namespace CoinProgect {
                 dataGridViewCollectors.DataSource = dataManager.Collectors;
             }
         }
+
+
+
+
+
+
+        private void tbCountrySearchCoin_KeyPress(object sender, KeyPressEventArgs e) {
+            if (!char.IsControl(e.KeyChar) && !char.IsLetter(e.KeyChar) && e.KeyChar != ' ' && e.KeyChar != '-') {
+                e.Handled = true;
+            }
+        }
+
+        private void tbNameSearchCollector_KeyPress(object sender, KeyPressEventArgs e) {
+            if (!char.IsControl(e.KeyChar) && !char.IsLetter(e.KeyChar) && e.KeyChar != ' ' && e.KeyChar != '-') {
+                e.Handled = true;
+            }
+        }
+
+        private void tbCountrySearchCollector_KeyPress(object sender, KeyPressEventArgs e) {
+            if (!char.IsControl(e.KeyChar) && !char.IsLetter(e.KeyChar) && e.KeyChar != ' ' && e.KeyChar != '-') {
+                e.Handled = true;
+            }
+        }
     }
 }

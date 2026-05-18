@@ -304,6 +304,7 @@
             tbCountrySearchCoin.Name = "tbCountrySearchCoin";
             tbCountrySearchCoin.Size = new Size(100, 23);
             tbCountrySearchCoin.TabIndex = 0;
+            tbCountrySearchCoin.KeyPress += tbCountrySearchCoin_KeyPress;
             // 
             // tabPage2
             // 
@@ -472,6 +473,7 @@
             tbCountrySearchCollector.Name = "tbCountrySearchCollector";
             tbCountrySearchCollector.Size = new Size(100, 23);
             tbCountrySearchCollector.TabIndex = 11;
+            tbCountrySearchCollector.KeyPress += tbCountrySearchCollector_KeyPress;
             // 
             // tbNameSearchCollector
             // 
@@ -479,6 +481,7 @@
             tbNameSearchCollector.Name = "tbNameSearchCollector";
             tbNameSearchCollector.Size = new Size(100, 23);
             tbNameSearchCollector.TabIndex = 10;
+            tbNameSearchCollector.KeyPress += tbNameSearchCollector_KeyPress;
             // 
             // Form1
             // 

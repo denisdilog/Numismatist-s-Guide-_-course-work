@@ -200,9 +200,6 @@ namespace CoinProgect {
 
 
 
-
-
-
         private void tbCountrySearchCoin_KeyPress(object sender, KeyPressEventArgs e) {
             if (!char.IsControl(e.KeyChar) && !char.IsLetter(e.KeyChar) && e.KeyChar != ' ' && e.KeyChar != '-') {
                 e.Handled = true;
@@ -217,6 +214,14 @@ namespace CoinProgect {
 
         private void tbCountrySearchCollector_KeyPress(object sender, KeyPressEventArgs e) {
             if (!char.IsControl(e.KeyChar) && !char.IsLetter(e.KeyChar) && e.KeyChar != ' ' && e.KeyChar != '-') {
+                e.Handled = true;
+            }
+        }
+
+
+
+        private void tbYearSearchCoin_KeyPress(object sender, KeyPressEventArgs e) {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar)) {
                 e.Handled = true;
             }
         }

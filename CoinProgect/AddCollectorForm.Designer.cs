@@ -123,6 +123,7 @@
             tbCountryCollector.Name = "tbCountryCollector";
             tbCountryCollector.Size = new Size(185, 23);
             tbCountryCollector.TabIndex = 24;
+            tbCountryCollector.KeyPress += tbCountryCollector_KeyPress;
             // 
             // tbNameCollector
             // 
@@ -131,6 +132,7 @@
             tbNameCollector.Name = "tbNameCollector";
             tbNameCollector.Size = new Size(185, 23);
             tbNameCollector.TabIndex = 23;
+            tbNameCollector.KeyPress += tbNameCollector_KeyPress;
             // 
             // checkboxOwnCollection
             // 

@@ -279,7 +279,7 @@
             // 
             comboboxSearchCoin.DropDownStyle = ComboBoxStyle.DropDownList;
             comboboxSearchCoin.FormattingEnabled = true;
-            comboboxSearchCoin.Items.AddRange(new object[] { "Золото", "Срібло", "Мідь", "Бронза" });
+            comboboxSearchCoin.Items.AddRange(new object[] { "", "Золото", "Срібло", "Платина", "Паладій", "Мідь", "Бронза", "Сталь", "Алюміній", "Мельхіор" });
             comboboxSearchCoin.Location = new Point(114, 110);
             comboboxSearchCoin.Name = "comboboxSearchCoin";
             comboboxSearchCoin.Size = new Size(100, 23);
@@ -288,6 +288,7 @@
             // tbYearSearchCoin
             // 
             tbYearSearchCoin.Location = new Point(114, 81);
+            tbYearSearchCoin.MaxLength = 4;
             tbYearSearchCoin.Name = "tbYearSearchCoin";
             tbYearSearchCoin.Size = new Size(100, 23);
             tbYearSearchCoin.TabIndex = 2;

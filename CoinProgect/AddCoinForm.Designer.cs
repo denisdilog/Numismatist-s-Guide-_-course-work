@@ -84,7 +84,7 @@
             comboboxMetalCoin.Anchor = AnchorStyles.Top;
             comboboxMetalCoin.DropDownStyle = ComboBoxStyle.DropDownList;
             comboboxMetalCoin.FormattingEnabled = true;
-            comboboxMetalCoin.Items.AddRange(new object[] { "Золото", "Срібло", "Мідь", "Бронза" });
+            comboboxMetalCoin.Items.AddRange(new object[] { "", "Золото", "Срібло", "Платина", "Паладій", "Мідь", "Бронза", "Сталь", "Алюміній", "Мельхіор" });
             comboboxMetalCoin.Location = new Point(127, 121);
             comboboxMetalCoin.Name = "comboboxMetalCoin";
             comboboxMetalCoin.Size = new Size(100, 23);
@@ -94,9 +94,11 @@
             // 
             tbYearCoin.Anchor = AnchorStyles.Top;
             tbYearCoin.Location = new Point(127, 90);
+            tbYearCoin.MaxLength = 4;
             tbYearCoin.Name = "tbYearCoin";
             tbYearCoin.Size = new Size(100, 23);
             tbYearCoin.TabIndex = 11;
+            tbYearCoin.KeyPress += tbYearCoin_KeyPress;
             // 
             // tbDenominationCoin
             // 
@@ -113,6 +115,7 @@
             tbCountryCoin.Name = "tbCountryCoin";
             tbCountryCoin.Size = new Size(100, 23);
             tbCountryCoin.TabIndex = 9;
+            tbCountryCoin.KeyPress += tbCountryCoin_KeyPress;
             // 
             // label5
             // 
@@ -149,6 +152,7 @@
             tbMintageCoin.Name = "tbMintageCoin";
             tbMintageCoin.Size = new Size(100, 23);
             tbMintageCoin.TabIndex = 17;
+            tbMintageCoin.KeyPress += tbMintageCoin_KeyPress;
             // 
             // btn_OKcoin
             // 

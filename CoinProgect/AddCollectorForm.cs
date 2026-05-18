@@ -78,5 +78,20 @@ namespace CoinProgect {
         private void checkboxOwnCollection_CheckedChanged(object sender, EventArgs e) {
             tbRareCoinsCollector.Enabled = checkboxOwnCollection.Checked;
         }
+
+
+
+
+
+        private void tbNameCollector_KeyPress(object sender, KeyPressEventArgs e) {
+            if (!char.IsControl(e.KeyChar) && !char.IsLetter(e.KeyChar) && e.KeyChar != ' ' && e.KeyChar != '-') {
+                e.Handled = true;
+            }
+        }
+        private void tbCountryCollector_KeyPress(object sender, KeyPressEventArgs e) {
+            if (!char.IsControl(e.KeyChar) && !char.IsLetter(e.KeyChar) && e.KeyChar != ' ' && e.KeyChar != '-') {
+                e.Handled = true;
+            }
+        }
     }
 }

@@ -86,5 +86,28 @@ namespace CoinProgect {
             this.DialogResult = DialogResult.Cancel;
             this.Close();
         }
+
+
+
+
+
+        private void tbCountryCoin_KeyPress(object sender, KeyPressEventArgs e) {
+            if (!char.IsControl(e.KeyChar) && !char.IsLetter(e.KeyChar) && e.KeyChar != ' ' && e.KeyChar != '-') {
+                e.Handled = true;
+            }
+        }
+
+
+
+        private void tbYearCoin_KeyPress(object sender, KeyPressEventArgs e) {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar)) {
+                e.Handled = true;
+            }
+        }
+        private void tbMintageCoin_KeyPress(object sender, KeyPressEventArgs e) {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar)) {
+                e.Handled = true;
+            }
+        }
     }
 }

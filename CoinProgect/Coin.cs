@@ -1,4 +1,8 @@
-﻿public class Coin {
+﻿/// <summary>
+/// Клас, що представляє сутність "Монета" та містить її основні 
+/// нумізматичні та технічні характеристики.
+/// </summary>
+public class Coin {
     public string Country { get; set; }
     public string Denomination { get; set; }
     public int Year { get; set; }

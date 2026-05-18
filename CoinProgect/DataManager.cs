@@ -4,6 +4,10 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text.Json;
 
+/// <summary>
+/// Менеджер даних, який керує колекціями об'єктів у пам'яті (BindingList) 
+/// та відповідає за їх збереження і завантаження з диска.
+/// </summary>
 public class SaveDataModel {
     public List<Coin> SavedCoins { get; set; } = new List<Coin>();
     public List<Collector> SavedCollectors { get; set; } = new List<Collector>();

@@ -8,6 +8,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+/// <summary>
+/// Діалогова форма, призначена для введення, валідації та редагування 
+/// параметрів об'єкта типу <see cref="Coin"/>.
+/// </summary>
 namespace CoinProgect {
     public partial class AddCoinForm : Form {
 

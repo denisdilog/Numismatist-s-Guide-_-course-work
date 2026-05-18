@@ -1,5 +1,9 @@
 using System.ComponentModel;
 
+/// <summary>
+/// Головна форма додатка, яка відповідає за відображення таблиць даних, 
+/// ініціалізацію пошукових запитів та виклик діалогових вікон керування.
+/// </summary>
 namespace CoinProgect {
     public partial class Form1 : Form {
 

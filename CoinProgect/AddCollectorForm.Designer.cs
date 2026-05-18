@@ -39,10 +39,12 @@
             // btn_Cancelcollector
             // 
             btn_Cancelcollector.Anchor = AnchorStyles.Bottom;
+            btn_Cancelcollector.Cursor = Cursors.Hand;
             btn_Cancelcollector.DialogResult = DialogResult.Cancel;
-            btn_Cancelcollector.Location = new Point(54, 261);
+            btn_Cancelcollector.Location = new Point(83, 326);
+            btn_Cancelcollector.Margin = new Padding(3, 4, 3, 4);
             btn_Cancelcollector.Name = "btn_Cancelcollector";
-            btn_Cancelcollector.Size = new Size(85, 33);
+            btn_Cancelcollector.Size = new Size(97, 40);
             btn_Cancelcollector.TabIndex = 36;
             btn_Cancelcollector.Text = "Cancel";
             btn_Cancelcollector.UseVisualStyleBackColor = true;
@@ -51,9 +53,11 @@
             // btn_OKcollector
             // 
             btn_OKcollector.Anchor = AnchorStyles.Bottom;
-            btn_OKcollector.Location = new Point(192, 261);
+            btn_OKcollector.Cursor = Cursors.Hand;
+            btn_OKcollector.Location = new Point(234, 326);
+            btn_OKcollector.Margin = new Padding(3, 4, 3, 4);
             btn_OKcollector.Name = "btn_OKcollector";
-            btn_OKcollector.Size = new Size(85, 33);
+            btn_OKcollector.Size = new Size(97, 40);
             btn_OKcollector.TabIndex = 35;
             btn_OKcollector.Text = "OK";
             btn_OKcollector.UseVisualStyleBackColor = true;
@@ -63,9 +67,9 @@
             // 
             label6.Anchor = AnchorStyles.Top;
             label6.AutoSize = true;
-            label6.Location = new Point(18, 126);
+            label6.Location = new Point(26, 152);
             label6.Name = "label6";
-            label6.Size = new Size(95, 15);
+            label6.Size = new Size(136, 18);
             label6.TabIndex = 33;
             label6.Text = "Рідкісні монети:";
             // 
@@ -73,18 +77,20 @@
             // 
             tbRareCoinsCollector.Anchor = AnchorStyles.Top;
             tbRareCoinsCollector.Enabled = false;
-            tbRareCoinsCollector.Location = new Point(123, 123);
+            tbRareCoinsCollector.Font = new Font("Consolas", 9F);
+            tbRareCoinsCollector.Location = new Point(169, 148);
+            tbRareCoinsCollector.Margin = new Padding(3, 4, 3, 4);
             tbRareCoinsCollector.Name = "tbRareCoinsCollector";
-            tbRareCoinsCollector.Size = new Size(185, 23);
+            tbRareCoinsCollector.Size = new Size(211, 22);
             tbRareCoinsCollector.TabIndex = 31;
             // 
             // label3
             // 
             label3.Anchor = AnchorStyles.Top;
             label3.AutoSize = true;
-            label3.Location = new Point(18, 95);
+            label3.Location = new Point(26, 114);
             label3.Name = "label3";
-            label3.Size = new Size(88, 15);
+            label3.Size = new Size(128, 18);
             label3.TabIndex = 29;
             label3.Text = "Контактні дані:";
             // 
@@ -92,9 +98,9 @@
             // 
             label2.Anchor = AnchorStyles.Top;
             label2.AutoSize = true;
-            label2.Location = new Point(18, 64);
+            label2.Location = new Point(26, 77);
             label2.Name = "label2";
-            label2.Size = new Size(46, 15);
+            label2.Size = new Size(64, 18);
             label2.TabIndex = 28;
             label2.Text = "Країна:";
             // 
@@ -102,35 +108,38 @@
             // 
             label1.Anchor = AnchorStyles.Top;
             label1.AutoSize = true;
-            label1.Location = new Point(18, 33);
+            label1.Location = new Point(26, 40);
             label1.Name = "label1";
-            label1.Size = new Size(31, 15);
+            label1.Size = new Size(48, 18);
             label1.TabIndex = 27;
             label1.Text = "Ім'я:";
             // 
             // tbContactInfoCollector
             // 
             tbContactInfoCollector.Anchor = AnchorStyles.Top;
-            tbContactInfoCollector.Location = new Point(123, 92);
+            tbContactInfoCollector.Location = new Point(169, 111);
+            tbContactInfoCollector.Margin = new Padding(3, 4, 3, 4);
             tbContactInfoCollector.Name = "tbContactInfoCollector";
-            tbContactInfoCollector.Size = new Size(185, 23);
+            tbContactInfoCollector.Size = new Size(211, 25);
             tbContactInfoCollector.TabIndex = 25;
             // 
             // tbCountryCollector
             // 
             tbCountryCollector.Anchor = AnchorStyles.Top;
-            tbCountryCollector.Location = new Point(123, 61);
+            tbCountryCollector.Location = new Point(169, 73);
+            tbCountryCollector.Margin = new Padding(3, 4, 3, 4);
             tbCountryCollector.Name = "tbCountryCollector";
-            tbCountryCollector.Size = new Size(185, 23);
+            tbCountryCollector.Size = new Size(211, 25);
             tbCountryCollector.TabIndex = 24;
             tbCountryCollector.KeyPress += tbCountryCollector_KeyPress;
             // 
             // tbNameCollector
             // 
             tbNameCollector.Anchor = AnchorStyles.Top;
-            tbNameCollector.Location = new Point(123, 30);
+            tbNameCollector.Location = new Point(169, 36);
+            tbNameCollector.Margin = new Padding(3, 4, 3, 4);
             tbNameCollector.Name = "tbNameCollector";
-            tbNameCollector.Size = new Size(185, 23);
+            tbNameCollector.Size = new Size(211, 25);
             tbNameCollector.TabIndex = 23;
             tbNameCollector.KeyPress += tbNameCollector_KeyPress;
             // 
@@ -138,9 +147,11 @@
             // 
             checkboxOwnCollection.Anchor = AnchorStyles.Top;
             checkboxOwnCollection.AutoSize = true;
-            checkboxOwnCollection.Location = new Point(18, 166);
+            checkboxOwnCollection.Cursor = Cursors.Hand;
+            checkboxOwnCollection.Location = new Point(26, 199);
+            checkboxOwnCollection.Margin = new Padding(3, 4, 3, 4);
             checkboxOwnCollection.Name = "checkboxOwnCollection";
-            checkboxOwnCollection.Size = new Size(145, 19);
+            checkboxOwnCollection.Size = new Size(179, 22);
             checkboxOwnCollection.TabIndex = 38;
             checkboxOwnCollection.Text = "Має власну колекцію";
             checkboxOwnCollection.UseVisualStyleBackColor = true;
@@ -149,10 +160,11 @@
             // AddCollectorForm
             // 
             AcceptButton = btn_OKcollector;
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 18F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.OldLace;
             CancelButton = btn_Cancelcollector;
-            ClientSize = new Size(332, 324);
+            ClientSize = new Size(415, 388);
             Controls.Add(checkboxOwnCollection);
             Controls.Add(btn_Cancelcollector);
             Controls.Add(btn_OKcollector);
@@ -164,7 +176,9 @@
             Controls.Add(tbContactInfoCollector);
             Controls.Add(tbCountryCollector);
             Controls.Add(tbNameCollector);
+            Font = new Font("Consolas", 11F);
             FormBorderStyle = FormBorderStyle.FixedDialog;
+            Margin = new Padding(3, 4, 3, 4);
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "AddCollectorForm";

@@ -10,6 +10,7 @@ namespace CoinProgect {
         private DataManager dataManager;
         public Form1() {
             InitializeComponent();
+            this.HelpRequested += new HelpEventHandler(Form1_HelpRequested);
             this.AcceptButton = btn_SearchCoins;
             dataManager = new DataManager();
 
@@ -27,6 +28,22 @@ namespace CoinProgect {
         private void tabControl1_SelectedIndexChanged(object sender, EventArgs e) {
             if (tabControl1.SelectedIndex == 0) this.AcceptButton = btn_SearchCoins;
             else this.AcceptButton = btn_SearchCollectors;
+        }
+        private void Form1_HelpRequested(object sender, HelpEventArgs hlpevent) {
+            string helpText = "ДОВІДКА КОРИСТУВАЧА\n\n" +
+                              "Гарячі клавіші:\n" +
+                              "• [F1] — Виклик цього вікна довідки.\n" +
+                              "• [Enter] — Швидкий запуск пошуку (на головному вікні) або підтвердження дії [ОК] (у діалогових вікнах).\n" +
+                              "• [Escape] — Закриття діалогового вікна.\n" +
+                              "• [Tab] — Швидкий перехід між полями введення та кнопками.\n\n" +
+                              "Доступні дії в інтерфейсі:\n" +
+                              "1. Вкладки «Монети» та «Колекціонери» дозволяють перемикатися між списками.\n" +
+                              "2. Кнопки «Додати» відкривають форму для створення нового запису.\n" +
+                              "3. Кнопки «Редагувати» (попередньо виділивши рядок у таблиці) дозволяють змінити дані.\n" +
+                              "4. Кнопки «Видалити» видаляють вибраний елемент після підтвердження.\n" +
+                              "5. Блоки пошуку фільтрують таблиці за введеними критеріями в реальному часі.";
+            MessageBox.Show(helpText, "Інструкція користувача", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            hlpevent.Handled = true;
         }
 
 
